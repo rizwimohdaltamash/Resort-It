@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-[45vh] lg:h-[55vh]  bg-[#0a2540] text-white flex">
       {/* For user */}
-      {(user?.role==='user')&&(
+      {(user?.role==='user' || user?.role!=='user' )&&(
         <div>
         {/* Huge Text */}
         <div className="absolute lg:top-10 left-10">
