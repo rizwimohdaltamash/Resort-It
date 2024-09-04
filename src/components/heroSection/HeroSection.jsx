@@ -38,7 +38,7 @@ const HeroSection = () => {
           <img src={Renewable} alt="" />
         </div>
 
-        {/* ADD VEHICLE Button */}
+        {/* ADD product Button */}
         <div className="absolute lg:px-0 px-1 bottom-4 lg:bottom-7 left-3 lg:left-10 ">
           <button
             onClick={() => navigate("/owner-dashboard")}
