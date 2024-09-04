@@ -24,7 +24,7 @@ const OwnerDashboard = () => {
     <Layout>
       {/* User Info Section */}
       <div className="flex flex-row justify-center bg-[#0a2540] text-white p-8  shadow-md mb-8">
-        <div className="w-1/2">
+        <div className=" w-[65%] lg:w-1/2">
           <h1 className=" text-lg lg:text-3xl font-bold text-[#00a99d]">
             Welcome, {user?.name}
           </h1>
@@ -39,7 +39,7 @@ const OwnerDashboard = () => {
         </div>
 
         {/* Car Icon */}
-        <div className="w-1/2 flex flex-row justify-end">
+        <div className=" w-[35%] lg:w-1/2 flex flex-row justify-end">
           <img src={Renewable} alt="" className=" mt-9 lg:mt-0 w-36 lg:w-48 h-36 lg:h-48" />
         </div>
       </div>
