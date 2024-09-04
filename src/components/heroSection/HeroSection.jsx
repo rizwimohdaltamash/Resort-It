@@ -39,7 +39,7 @@ const HeroSection = () => {
         </div>
 
         {/* ADD VEHICLE Button */}
-        <div className="absolute lg:px-0 px-1 bottom-7 left-3 lg:left-10 ">
+        <div className="absolute lg:px-0 px-1 bottom-15 left-3 lg:left-10 ">
           <button
             onClick={() => navigate("/owner-dashboard")}
             className="px-4 lg:px-8 py-2 lg:py-3 lg:text-lg bg-[#00a99d] text-white rounded-lg hover:bg-[#008f87] transition duration-300"
