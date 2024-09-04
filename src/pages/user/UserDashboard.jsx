@@ -30,12 +30,7 @@ const UserDashboard = () => {
           </h1>
           <p className="lg:text-xl text-gray-300 mt-2">Email: {user?.email}</p>
           <p className="lg:text-xl text-gray-300 mt-2">Role: {user?.role}</p>
-          <button
-            onClick={() => navigate("/addproduct")}
-            className="mt-5 px-4 lg:px-8 py-2 lg:py-3 lg:text-lg bg-[#00a99d] text-white rounded-lg hover:bg-[#008f87] transition duration-300"
-          >
-            Sell Product
-          </button>
+         
         </div>
 
         {/* Car Icon */}
