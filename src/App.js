@@ -18,6 +18,8 @@ import MessagePage from "./components/messagepage/MessagePage";
 
 import GovSchemePage from "./components/govschemePage/GovSchemePage";
 import SkillPage from "./components/skillPage/SkillPage";
+import ScrollTop from "./components/scrollTop/ScrollTop";
+
 import "./App.css";
 //Skills Pages
 
@@ -28,6 +30,8 @@ function App() {
     
     <MyState>
       <Router>
+      <ScrollTop />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/category/:categoryname" element={<CategoryPage />} />
