@@ -10,8 +10,42 @@ const HeroSection = () => {
 
   return (
     <div className="relative h-[45vh] lg:h-[55vh]  bg-[#0a2540] text-white flex">
+
+
+
+     {/* For All */}
+     {(user?.role!=='user'||user?.role!=='scrapdealer'||user?.role!=='ngo')&&(
+        <div>
+        {/* Huge Text */}
+        <div className="absolute lg:top-10 left-10">
+          <h1 className="px-1 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
+            WANT TO SELL YOUR RECYCLABLE PRODUCTS?
+          </h1>
+          <p className="mt-4 px-1 lg:px-0 text-sm lg:text-3xl text-gray-300">
+            Earn Effortlessly by selling your products to <br />
+            recycling companies or scrap-dealers.
+          </p>
+          <p className="mt-2 px-1 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
+            This is a platform being made with the intention of reusing and
+            recycling the products, reducing waste from the environment and
+            making it profitable for the users by selling the products at a high
+            bid.
+          </p>
+        </div>
+
+        {/* Car Icon */}
+        <div className="absolute h-1/2 w-1/4 lg:top-0 bottom-[-3.2rem]  right-10 text-[23rem] text-[#00a99d]">
+          {/* <GiWheat /> */}
+          <img src={Renewable} alt="" />
+        </div>
+
+      
+      </div>
+       )} 
+
+
       {/* For user */}
-      {/* {(user?.role==='user' || user?.role!=='user' )&&( */}
+      {(user?.role==='user' )&&(
         <div>
         {/* Huge Text */}
         <div className="absolute lg:top-10 left-10">
@@ -46,7 +80,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      {/* )} */}
+       )} 
 
       {/* For scrap dealers */}
       {(user?.role==='scrapdealer')&&(
