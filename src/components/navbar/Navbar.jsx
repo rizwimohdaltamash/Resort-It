@@ -62,7 +62,7 @@ const Navbar = () => {
       {/* Admin */}
       {/* {user?.name} */}
       {user?.role === "user" && (
-        <li className="hover:text-gray-300 text-md lg:text-lg">
+        <li className="hover:text-gray-300 text-sm lg:text-lg">
           <Link to={"/owner-dashboard"}> User-Dash</Link>
         </li>
       )}
@@ -96,7 +96,7 @@ const Navbar = () => {
       {/* Logout */}
       {user && (
         <li
-          className=" bg-[#008f87] hover:bg-[#00a99d] px-2 py-1 rounded-md cursor-pointer text-md lg:text-lg"
+          className=" bg-[#008f87] hover:bg-[#00a99d] px-2 py-1 rounded-md cursor-pointer text-sm lg:text-lg"
           onClick={logout}
         >
           Logout
