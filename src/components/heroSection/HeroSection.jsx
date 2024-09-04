@@ -16,15 +16,15 @@ const HeroSection = () => {
       {(user?.role==='user')&&(
         <div>
         {/* Huge Text */}
-        <div className="absolute lg:top-10 left-10">
-          <h1 className="px-1 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
+        <div className="absolute lg:top-10 lg:left-10">
+          <h1 className="px-4 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
             WANT TO SELL YOUR RECYCLABLE PRODUCTS?
           </h1>
-          <p className="mt-4 px-1 lg:px-0 text-sm lg:text-3xl text-gray-300">
+          <p className="mt-4 px-4 lg:px-0 text-sm lg:text-3xl text-gray-300">
             Earn Effortlessly by selling your products to <br />
             recycling companies or scrap-dealers.
           </p>
-          <p className="mt-2 px-1 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
+          <p className="mt-2 px-4 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
             This is a platform being made with the intention of reusing and
             recycling the products, reducing waste from the environment and
             making it profitable for the users by selling the products at a high
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <img src={Renewable} alt="" />
         </div>
 
-        {/* ADD product Button */}
+        {/* ADD VEHICLE Button */}
         <div className="absolute lg:px-0 px-1 bottom-4 lg:bottom-7 left-3 lg:left-10 ">
           <button
             onClick={() => navigate("/owner-dashboard")}
@@ -54,15 +54,15 @@ const HeroSection = () => {
       {(user?.role==='scrapdealer')&&(
         <div>
         {/* Huge Text */}
-        <div className="absolute lg:top-10 left-10">
-          <h1 className="px-1 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
+        <div className="absolute lg:top-10 lg:left-10">
+          <h1 className="px-4 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
             WANT TO GET YOUR RECYCLABLE PRODUCTS?
           </h1>
-          <p className="mt-4 px-1 lg:px-0 text-sm lg:text-3xl text-gray-300">
+          <p className="mt-4 px-4 lg:px-0 text-sm lg:text-3xl text-gray-300">
             Browse and Bid various recyclabe products to <br />
             for the best user can get.
           </p>
-          <p className="mt-2 px-1 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
+          <p className="mt-2 px-4 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
             This is a platform being made with the intention of reusing and
             recycling the products, reducing waste from the environment and
             making it profitable for the users by selling the products at a high
@@ -83,15 +83,15 @@ const HeroSection = () => {
       {(user?.role==='ngo')&&(
         <div>
         {/* Huge Text */}
-        <div className="absolute lg:top-10 left-10">
-          <h1 className="px-1 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
+        <div className="absolute lg:top-10 lg:left-10">
+          <h1 className="px-4 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
             WANT TO KNOW YOUR WHERE THE WASTE IS DUMPED?
           </h1>
-          <p className="mt-4 px-1 lg:px-0 text-sm lg:text-3xl text-gray-300">
+          <p className="mt-4 px-4 lg:px-0 text-sm lg:text-3xl text-gray-300">
             Go to our community page and know where and <br />
             at which place waste is dumped.
           </p>
-          <p className="mt-2 px-1 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
+          <p className="mt-2 px-4 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
             This is a platform being made with the intention of reusing and
             recycling the products, reducing waste from the environment and
             making it profitable for the users by selling the products at a high
@@ -114,15 +114,15 @@ const HeroSection = () => {
   {!(user?.role==='user' || user?.role==='scrapdealer' || user?.role==='ngo') && (
     <div>
     {/* Huge Text */}
-    <div className="absolute lg:top-10 left-10">
-      <h1 className="px-1 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
+    <div className="absolute lg:top-10 lg:left-10">
+      <h1 className="px-4 lg:px-0 text-lg lg:text-4xl font-bold text-[#00a99d]">
         WANT TO SELL YOUR RECYCLABLE PRODUCTS?
       </h1>
-      <p className="mt-4 px-1 lg:px-0 text-sm lg:text-3xl text-gray-300">
+      <p className="mt-4 px-4 lg:px-0 text-sm lg:text-3xl text-gray-300">
         Earn Effortlessly by selling your products to <br />
         recycling companies or scrap-dealers.
       </p>
-      <p className="mt-2 px-1 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
+      <p className="mt-2 px-4 lg:px-0 text-sm lg:text-xl text-gray-400 max-w-md">
         This is a platform being made with the intention of reusing and
         recycling the products, reducing waste from the environment and
         making it profitable for the users by selling the products at a high
