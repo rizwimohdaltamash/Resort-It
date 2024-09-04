@@ -4,6 +4,7 @@ import { GiWheat } from "react-icons/gi";
 import myContext from "../../context/myContext";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import Renewable from "../../assets/treatment.png";
 
 const UserDashboard = () => {
   // get user from localStorage
@@ -23,21 +24,26 @@ const UserDashboard = () => {
     <Layout>
        {/* User Info Section */}
        <div className="flex flex-row justify-center bg-[#0a2540] text-white p-8  shadow-md mb-8">
-        <div className="w-1/2">
-
-        <h1 className="text-5xl font-bold text-[#00a99d]">Welcome, {user?.name}</h1>
-        <p className="text-3xl text-gray-300 mt-2">Email: {user?.email}</p>
-        <p className="text-3xl text-gray-300 mt-2">Role: {user?.role}</p>
+       <div className=" w-[65%] lg:w-1/2">
+          <h1 className=" text-lg lg:text-3xl font-bold text-[#00a99d]">
+            Welcome, {user?.name}
+          </h1>
+          <p className="lg:text-xl text-gray-300 mt-2">Email: {user?.email}</p>
+          <p className="lg:text-xl text-gray-300 mt-2">Role: {user?.role}</p>
+          <button
+            onClick={() => navigate("/addproduct")}
+            className="mt-5 px-4 lg:px-8 py-2 lg:py-3 lg:text-lg bg-[#00a99d] text-white rounded-lg hover:bg-[#008f87] transition duration-300"
+          >
+            Sell Product
+          </button>
         </div>
-        
 
-         {/* Car Icon */}
-      <div className="w-1/2 flex flex-row justify-end text-[16rem] text-[#00a99d]">
-          <GiWheat />
+        {/* Car Icon */}
+        <div className=" w-[35%] lg:w-1/2 flex flex-row justify-end">
+          <img src={Renewable} alt="" className=" mt-9 lg:mt-0 w-36 lg:w-48 h-36 lg:h-48" />
         </div>
-       
       </div>
-
+     
      
 
      
