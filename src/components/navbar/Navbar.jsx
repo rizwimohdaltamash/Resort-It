@@ -24,16 +24,16 @@ const Navbar = () => {
 
   // navList Data
   const navList = (
-    <ul className="flex flex-row justify-evenly text-center items-center  lg:space-x-9 text-white font-medium text-md lg:px-5 lg:mx-0 mx-2 w-full">
+    <ul className="flex flex-row justify-evenly text-center items-center space-x-9 text-white font-medium text-md lg:px-5 lg:mx-0 mx-2 w-full">
+     
       {/* Home */}
-      {/* Home */}
-      <li className="hover:text-gray-300 text-xs lg:text-lg">
+      <li className="hover:text-gray-300 text-md lg:text-lg">
         <Link to={"/"}>Home</Link>
       </li>
 
       {/* Signup */}
       {!user ? (
-        <li className="hover:text-gray-300 text-xs lg:text-lg">
+        <li className="hover:text-gray-300 text-md lg:text-lg">
           <Link to={"/signup"}>Signup</Link>
         </li>
       ) : (
@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {/* Login */}
       {!user ? (
-        <li className="hover:text-gray-300 text-xs lg:text-lg">
+        <li className="hover:text-gray-300 text-md lg:text-lg">
           <Link to={"/login"}>Login</Link>
         </li>
       ) : (
@@ -54,7 +54,7 @@ const Navbar = () => {
       {/* User */}
       {/* {user?.name} */}
       {(user?.role === "scrapdealer" || user?.role === "ngo") && (
-        <li className="hover:text-gray-300 text-xs lg:text-lg">
+        <li className="hover:text-gray-300 text-md lg:text-lg">
           <Link to={"/user-dashboard"}>Dashboard </Link>
         </li>
       )}
@@ -62,13 +62,13 @@ const Navbar = () => {
       {/* Admin */}
       {/* {user?.name} */}
       {user?.role === "user" && (
-        <li className="hover:text-gray-300 text-xs lg:text-lg">
-          <Link to={"/owner-dashboard"}> User-Dashboard</Link>
+        <li className="hover:text-gray-300 text-md lg:text-lg">
+          <Link to={"/owner-dashboard"}> User-Dash</Link>
         </li>
       )}
 
       {/* Dropdown */}
-      <li className="relative text-xs lg:text-lg">
+      <li className="relative text-md lg:text-lg">
         <button
           onClick={toggleDropdown}
           className="hover:text-gray-300 focus:outline-none"
@@ -96,7 +96,7 @@ const Navbar = () => {
       {/* Logout */}
       {user && (
         <li
-          className=" bg-[#008f87] hover:bg-[#00a99d] px-2 py-1 rounded-md cursor-pointer text-xs lg:text-lg"
+          className=" bg-[#008f87] hover:bg-[#00a99d] px-2 py-1 rounded-md cursor-pointer text-md lg:text-lg"
           onClick={logout}
         >
           Logout
