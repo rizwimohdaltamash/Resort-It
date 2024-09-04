@@ -1,5 +1,4 @@
 import React from "react";
-import { GiWheat } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import Renewable from '../../assets/treatment.png';
 
@@ -11,12 +10,10 @@ const HeroSection = () => {
   return (
     <div className="relative h-[45vh] lg:h-[55vh]  bg-[#0a2540] text-white flex">
 
-
-
-    
+      
 
       {/* For user */}
-      {(user?.role==='user' )&&(
+      {(user?.role==='user')&&(
         <div>
         {/* Huge Text */}
         <div className="absolute lg:top-10 left-10">
@@ -51,7 +48,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-       )} 
+      )}
 
       {/* For scrap dealers */}
       {(user?.role==='scrapdealer')&&(
@@ -113,7 +110,7 @@ const HeroSection = () => {
       </div>
       )}
 
-         {/* For other roles */}
+       {/* For other roles */}
   {!(user?.role==='user' || user?.role==='scrapdealer' || user?.role==='ngo') && (
     <div>
     {/* Huge Text */}
