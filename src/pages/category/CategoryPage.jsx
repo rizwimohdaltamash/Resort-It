@@ -51,7 +51,7 @@ const CategoryPage = () => {
   return (
     <Layout>
       <div className="category-page min-h-screen flex">
-        <div className="w-[43%] lg:w-1/4 bg-[#0c2845] text-white p-6 shadow-lg">
+        <div className="hidden lg:block lg:w-1/4 bg-[#0c2845] text-white p-6 shadow-lg">
           <h2 className="text-3xl font-bold mb-6 border-b-2 border-[#008f87] pb-2">
             Filters
           </h2>
@@ -138,7 +138,7 @@ const CategoryPage = () => {
           </div>
         </div>
 
-        <div className="w-[57%]  lg:w-3/4 bg-gray-100 p-8">
+        <div className="w-[100%] lg:w-3/4 bg-gray-100 p-8">
           {filterProduct.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
               {filterProduct.map((item, index) => {
