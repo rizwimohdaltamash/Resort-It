@@ -33,7 +33,7 @@ const HomePage = () => {
 
         <Skills />
 
-        <Testimonial />
+        {/* <Testimonial /> */}
       </Layout>
     </div>
   );
